@@ -1,0 +1,1688 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24133d">
+  <meta name="description"
+    content="Descubre una forma de explorar el emprendimiento, el bienestar y una comunidad de apoyo con Angie Ramírez.">
+  <title>Crece con intención | Angie Ramírez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #21132f;
+      --plum: #32184b;
+      --purple: #7046a5;
+      --lilac: #d9c8ef;
+      --gold: #d8b978;
+      --cream: #fbf8f4;
+      --muted: #746a7b;
+      --white: #fff;
+      --line: rgba(49, 25, 73, .13);
+      --shadow: 0 24px 70px rgba(38, 19, 55, .14)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.6
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit
+    }
+
+    button,
+    a,
+    input,
+    select,
+    textarea {
+      -webkit-tap-highlight-color: transparent
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 44px));
+      margin: auto
+    }
+
+    .topbar {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: .02em
+    }
+
+    .brand-mark {
+      width: 39px;
+      height: 39px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 20px
+    }
+
+    .brand small {
+      display: block;
+      font-size: 10px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      font-size: 13px;
+      color: #66566f
+    }
+
+    .navlinks a:hover {
+      color: var(--purple)
+    }
+
+    .nav-cta,
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 22px;
+      background: var(--plum);
+      color: white;
+      font-weight: 700;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: transform .25s, box-shadow .25s, background .25s
+    }
+
+    .nav-cta:hover,
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px #32184b35;
+      background: #4b266b
+    }
+
+    .btn-light {
+      background: white;
+      color: var(--plum);
+      border: 1px solid var(--line)
+    }
+
+    .btn-light:hover {
+      background: #f5eefb;
+      color: var(--plum)
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--purple);
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .2em
+    }
+
+    .eyebrow:before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: var(--gold)
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -.025em
+    }
+
+    h1 {
+      font-size: clamp(44px, 6vw, 76px);
+      margin: 20px 0 22px
+    }
+
+    h2 {
+      font-size: clamp(34px, 4vw, 52px);
+      margin: 16px 0 18px
+    }
+
+    h3 {
+      font-size: 25px
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at 80% 18%, #67458b 0, #3c2055 32%, #241337 75%);
+      color: white;
+      border-radius: 0 0 32px 32px
+    }
+
+    .hero:before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border: 1px solid #ffffff1b;
+      border-radius: 50%;
+      right: -150px;
+      top: -170px;
+      box-shadow: 0 0 0 55px #ffffff08, 0 0 0 110px #ffffff05
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.03fr .97fr;
+      gap: 55px;
+      align-items: center;
+      padding: 64px 0 86px
+    }
+
+    .hero .eyebrow {
+      color: #e8d4a2
+    }
+
+    .hero-copy {
+      max-width: 600px
+    }
+
+    .hero h1 em {
+      color: #e7d4a1;
+      font-style: normal
+    }
+
+    .hero p {
+      color: #e1d8e9;
+      font-size: 16px;
+      max-width: 520px
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 28px 0 22px
+    }
+
+    .hero .btn {
+      background: var(--gold);
+      color: #281537
+    }
+
+    .hero .btn:hover {
+      background: #f0dca9
+    }
+
+    .hero .btn-light {
+      background: #ffffff12;
+      color: white;
+      border-color: #ffffff44
+    }
+
+    .trustline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #c9bad4;
+      font-size: 11px
+    }
+
+    .trust-dots {
+      display: flex
+    }
+
+    .trust-dots span {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid #38204e;
+      background: #d8b978;
+      margin-left: -6px
+    }
+
+    .trust-dots span:first-child {
+      margin-left: 0;
+      background: #a98ac8
+    }
+
+    .trust-dots span:nth-child(2) {
+      background: #d9c4b1
+    }
+
+    .trust-dots span:nth-child(3) {
+      background: #8b729c
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 510px;
+      display: grid;
+      place-items: center
+    }
+
+    .portrait-wrap {
+      position: relative;
+      width: min(100%, 420px);
+      height: 480px;
+      border-radius: 220px 220px 28px 28px;
+      overflow: hidden;
+      border: 1px solid #ffffff35;
+      background: linear-gradient(145deg, #d8c8e8, #6e4e85);
+      box-shadow: 0 30px 80px #10081b77
+    }
+
+    .portrait-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 28%;
+      filter: saturate(.88)
+    }
+
+    .portrait-wrap:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, #23103280, transparent 50%)
+    }
+
+    .float-card {
+      position: absolute;
+      z-index: 2;
+      background: #fff;
+      color: var(--ink);
+      padding: 17px 19px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      max-width: 210px;
+      animation: float 5s ease-in-out infinite
+    }
+
+    .float-card strong {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px
+    }
+
+    .float-card span {
+      font-size: 11px;
+      color: var(--muted)
+    }
+
+    .float-card .mini-icon {
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: #f0e8f8;
+      color: var(--purple);
+      margin-bottom: 10px
+    }
+
+    .card-one {
+      left: -22px;
+      top: 82px
+    }
+
+    .card-two {
+      right: -18px;
+      bottom: 58px;
+      animation-delay: -2s
+    }
+
+    .hero-caption {
+      position: absolute;
+      z-index: 2;
+      bottom: 24px;
+      left: 28px;
+      color: white
+    }
+
+    .hero-caption strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 23px
+    }
+
+    .hero-caption span {
+      font-size: 11px;
+      color: #e4d9ed;
+      letter-spacing: .08em
+    }
+
+    .strip {
+      background: #fff;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .strip-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 24px 0;
+      gap: 20px
+    }
+
+    .strip-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #5e5268;
+      font-size: 12px
+    }
+
+    .strip-item b {
+      color: var(--purple);
+      font-size: 18px;
+      font-weight: 500
+    }
+
+    section {
+      padding: 96px 0
+    }
+
+    .section-head {
+      max-width: 660px;
+      margin-bottom: 42px
+    }
+
+    .section-head.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .section-head.center .eyebrow {
+      justify-content: center
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 15px
+    }
+
+    .pill {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #725a84;
+      background: #fff
+    }
+
+    .path-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px
+    }
+
+    .path-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 29px;
+      transition: transform .3s, box-shadow .3s
+    }
+
+    .path-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow)
+    }
+
+    .path-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: #f0e8f8;
+      color: var(--purple);
+      font-size: 21px;
+      margin-bottom: 22px
+    }
+
+    .path-card p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 0
+    }
+
+    .path-card h3 {
+      margin-bottom: 12px
+    }
+
+    .about {
+      background: #f1eaf5
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 70px;
+      align-items: center
+    }
+
+    .about-art {
+      min-height: 480px;
+      position: relative
+    }
+
+    .about-photo {
+      position: absolute;
+      inset: 0 40px 25px 0;
+      border-radius: 22px;
+      overflow: hidden;
+      background: #d5c3e1
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .about-note {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      background: var(--plum);
+      color: white;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: var(--shadow)
+    }
+
+    .about-note strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      color: var(--gold)
+    }
+
+    .about-note span {
+      font-size: 11px;
+      color: #e5d9ed
+    }
+
+    .about-copy p {
+      color: #71647a
+    }
+
+    .checklist {
+      display: grid;
+      gap: 13px;
+      margin: 25px 0 30px
+    }
+
+    .check {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 13px;
+      color: #574961
+    }
+
+    .check b {
+      color: var(--purple);
+      font-size: 17px;
+      line-height: 1.2
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px
+    }
+
+    .step {
+      border-top: 1px solid var(--line);
+      padding: 23px 8px 0 0
+    }
+
+    .step-num {
+      font-family: "Playfair Display", serif;
+      color: var(--gold);
+      font-size: 32px
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin: 13px 0 10px
+    }
+
+    .step p {
+      font-size: 12px;
+      color: var(--muted)
+    }
+
+    .quote-section {
+      background: var(--plum);
+      color: white;
+      position: relative;
+      overflow: hidden
+    }
+
+    .quote-section:after {
+      content: "“";
+      position: absolute;
+      font-family: "Playfair Display", serif;
+      font-size: 400px;
+      color: #ffffff08;
+      right: 5%;
+      top: -140px;
+      line-height: 1
+    }
+
+    .quote-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+      text-align: center;
+      margin: auto
+    }
+
+    .quote-inner h2 {
+      font-size: clamp(30px, 4vw, 48px)
+    }
+
+    .quote-inner p {
+      color: #d9cbe3
+    }
+
+    .quote-inner .eyebrow {
+      justify-content: center;
+      color: var(--gold)
+    }
+
+    .form-section {
+      background: #fbf8f4
+    }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 60px;
+      align-items: start
+    }
+
+    .form-intro {
+      position: sticky;
+      top: 25px
+    }
+
+    .form-intro p {
+      color: var(--muted)
+    }
+
+    .form-benefits {
+      display: grid;
+      gap: 15px;
+      margin-top: 25px
+    }
+
+    .form-benefit {
+      display: flex;
+      gap: 12px;
+      font-size: 13px;
+      color: #61546b
+    }
+
+    .form-benefit span {
+      color: var(--purple)
+    }
+
+    .lead-form {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 18px 55px #2d17400c
+    }
+
+    .form-progress {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 28px
+    }
+
+    .form-progress span {
+      height: 4px;
+      background: #eee5f3;
+      border-radius: 9px;
+      flex: 1
+    }
+
+    .form-progress span.active {
+      background: var(--purple)
+    }
+
+    .form-step {
+      display: none
+    }
+
+    .form-step.active {
+      display: block;
+      animation: fadeUp .4s ease
+    }
+
+    .form-step h3 {
+      margin-bottom: 8px
+    }
+
+    .form-step>p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 25px
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 17px
+    }
+
+    .field.full {
+      grid-column: 1/-1
+    }
+
+    .field label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #4f3e5d
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      border: 1px solid #e3dbe8;
+      border-radius: 11px;
+      padding: 13px 14px;
+      background: #fdfbfd;
+      color: var(--ink);
+      outline: none;
+      transition: border .2s, box-shadow .2s
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: #9674b5;
+      box-shadow: 0 0 0 3px #a986c41c
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 85px
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px
+    }
+
+    .option {
+      position: relative
+    }
+
+    .option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none
+    }
+
+    .option label {
+      display: block;
+      border: 1px solid #e3dbe8;
+      border-radius: 12px;
+      padding: 13px 14px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      transition: .2s
+    }
+
+    .option input:checked+label {
+      background: #f4edf9;
+      border-color: var(--purple);
+      color: var(--plum);
+      box-shadow: inset 0 0 0 1px var(--purple)
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 24px
+    }
+
+    .form-actions .btn {
+      min-width: 130px
+    }
+
+    .form-error {
+      color: #a22e50;
+      font-size: 12px;
+      margin-top: 10px;
+      display: none
+    }
+
+    .privacy {
+      font-size: 10px;
+      color: #8c8194;
+      margin-top: 15px
+    }
+
+    .success {
+      display: none;
+      text-align: center;
+      padding: 45px 20px
+    }
+
+    .success .success-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #efe5f7;
+      color: var(--purple);
+      font-size: 28px;
+      margin: 0 auto 20px
+    }
+
+    .success p {
+      color: var(--muted)
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 70px
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 10px
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line)
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 19px 0;
+      cursor: pointer;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 13px
+    }
+
+    .faq-question span:last-child {
+      color: var(--purple);
+      font-size: 20px
+    }
+
+    .faq-answer {
+      display: none;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 0 30px 18px 0
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+      animation: fadeUp .3s ease
+    }
+
+    .faq-item.open .faq-question span:last-child {
+      transform: rotate(45deg)
+    }
+
+    .final-cta {
+      padding: 70px 0
+    }
+
+    .final-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 26px;
+      background: linear-gradient(115deg, #32184b, #68458a);
+      color: white;
+      padding: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px
+    }
+
+    .final-card:after {
+      content: "";
+      position: absolute;
+      right: 25%;
+      top: -180px;
+      width: 350px;
+      height: 350px;
+      border: 1px solid #ffffff22;
+      border-radius: 50%;
+      box-shadow: 0 0 0 40px #ffffff08, 0 0 0 80px #ffffff05
+    }
+
+    .final-card>div,
+    .final-card>a {
+      position: relative;
+      z-index: 1
+    }
+
+    .final-card h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      max-width: 600px;
+      margin-bottom: 10px
+    }
+
+    .final-card p {
+      color: #e0d5e8;
+      margin: 0
+    }
+
+    .final-card .btn {
+      white-space: nowrap;
+      background: var(--gold);
+      color: var(--plum)
+    }
+
+    footer {
+      background: #21132f;
+      color: #e9dff0;
+      padding: 32px 0
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px
+    }
+
+    .footer-row p {
+      font-size: 10px;
+      color: #b7a8c2;
+      margin: 8px 0 0
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      font-size: 11px;
+      color: #d2c4dc
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .7s ease, transform .7s ease
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-12px)
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *:before,
+      *:after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @media(max-width:900px) {
+      .navlinks {
+        display: none
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 55px 0 70px
+      }
+
+      .hero-copy {
+        max-width: 700px
+      }
+
+      .hero-visual {
+        min-height: 450px
+      }
+
+      .portrait-wrap {
+        height: 430px;
+        width: min(82%, 390px)
+      }
+
+      .card-one {
+        left: 0
+      }
+
+      .card-two {
+        right: 0
+      }
+
+      .about-grid {
+        gap: 35px
+      }
+
+      .form-layout {
+        gap: 30px
+      }
+
+      .faq-grid {
+        gap: 35px
+      }
+
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:640px) {
+      .container {
+        width: min(100% - 30px, 1160px)
+      }
+
+      .topbar {
+        height: 66px
+      }
+
+      .brand {
+        font-size: 13px
+      }
+
+      .brand-mark {
+        width: 34px;
+        height: 34px
+      }
+
+      .topbar .nav-cta {
+        padding: 11px 14px;
+        font-size: 11px
+      }
+
+      .hero {
+        border-radius: 0 0 22px 22px
+      }
+
+      .hero-grid {
+        padding: 44px 0 55px
+      }
+
+      .hero h1 {
+        font-size: 44px
+      }
+
+      .hero p {
+        font-size: 14px
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr
+      }
+
+      .hero-actions .btn {
+        width: 100%
+      }
+
+      .hero-visual {
+        min-height: 400px
+      }
+
+      .portrait-wrap {
+        height: 380px;
+        width: 83%
+      }
+
+      .float-card {
+        padding: 13px;
+        max-width: 165px
+      }
+
+      .card-one {
+        top: 50px;
+        left: -4px
+      }
+
+      .card-two {
+        bottom: 35px;
+        right: -2px
+      }
+
+      .hero-caption {
+        left: 20px;
+        bottom: 20px
+      }
+
+      .hero-caption strong {
+        font-size: 19px
+      }
+
+      .strip-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 20px 0
+      }
+
+      .strip-item {
+        justify-content: flex-start
+      }
+
+      .strip-item b {
+        width: 26px;
+        text-align: center
+      }
+
+      section {
+        padding: 70px 0
+      }
+
+      .path-grid {
+        grid-template-columns: 1fr
+      }
+
+      .path-card {
+        padding: 25px
+      }
+
+      .about-grid,
+      .form-layout,
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 30px
+      }
+
+      .about-art {
+        min-height: 380px
+      }
+
+      .about-photo {
+        right: 28px
+      }
+
+      .about-note {
+        width: 165px;
+        padding: 18px
+      }
+
+      .about-note strong {
+        font-size: 24px
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 22px 16px
+      }
+
+      .step h3 {
+        font-size: 18px
+      }
+
+      .lead-form {
+        padding: 23px 18px
+      }
+
+      .field-grid {
+        grid-template-columns: 1fr;
+        gap: 0
+      }
+
+      .options {
+        grid-template-columns: 1fr
+      }
+
+      .form-actions .btn {
+        min-width: 0;
+        flex: 1;
+        padding: 13px 12px
+      }
+
+      .form-intro {
+        position: static
+      }
+
+      .final-card {
+        padding: 34px 24px;
+        display: block
+      }
+
+      .final-card .btn {
+        margin-top: 24px;
+        width: 100%
+      }
+
+      .footer-row {
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .footer-links {
+        flex-wrap: wrap
+      }
+
+      .quote-section {
+        padding: 75px 0
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container topbar">
+    <a class="brand" href="#inicio" aria-label="Angie Ramírez, inicio">
+      <span class="brand-mark">A</span><span>ANGIE RAMÍREZ<small>Expansión · Liderazgo · Bienestar</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Navegación principal"><a href="#enfoque">Mi enfoque</a><a href="#proceso">Cómo
+        funciona</a><a href="#preguntas">Preguntas frecuentes</a></nav>
+    <a class="nav-cta" href="#formulario">Hablemos <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Una nueva forma de crecer</div>
+          <h1>Tu próxima etapa empieza con <em>una decisión.</em></h1>
+          <p>Explora una oportunidad para crecer, aprender y construir algo propio, con acompañamiento cercano y una
+            comunidad que comparte tu deseo de avanzar.</p>
+          <div class="hero-actions"><a class="btn" href="#formulario">Quiero conocer la oportunidad <span>↗</span></a><a
+              class="btn btn-light" href="#enfoque">Descubre mi enfoque <span>↓</span></a></div>
+          <div class="trustline">
+            <div class="trust-dots"><span></span><span></span><span></span></div><span>Una conversación honesta. Sin
+              presión ni compromiso.</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="portrait-wrap">
+            <img src="images/hero.jpeg"
+              alt="Retrato editorial de una mujer sonriente" fetchpriority="high">
+            <div class="hero-caption"><strong>Crece con intención.</strong><span>CON PROPÓSITO · A TU RITMO</span></div>
+          </div>
+          <div class="float-card card-one">
+            <div class="mini-icon">✦</div><strong>Una comunidad que acompaña</strong><span>Aprendizaje, conexión y
+              apoyo.</span>
+          </div>
+          <div class="float-card card-two">
+            <div class="mini-icon">↗</div><strong>Tu camino, tus objetivos</strong><span>Empieza con una
+              conversación.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip">
+      <div class="container strip-grid">
+        <div class="strip-item"><b>✦</b><span>Orientación personalizada</span></div>
+        <div class="strip-item"><b>◎</b><span>Comunidad y aprendizaje continuo</span></div>
+        <div class="strip-item"><b>↗</b><span>Un siguiente paso que tenga sentido para ti</span></div>
+      </div>
+    </div>
+
+    <section id="enfoque">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Mi enfoque</div>
+          <h2>No se trata solo de una oportunidad.<br>Se trata de encontrar tu camino.</h2>
+          <p>Antes de hablar de opciones, quiero entender qué buscas, qué te motiva y qué tipo de apoyo necesitas en
+            esta etapa.</p>
+        </div>
+        <div class="path-grid">
+          <article class="path-card reveal">
+            <div class="path-icon">✧</div>
+            <h3>Bienestar consciente</h3>
+            <p>Conoce productos de bienestar y aprende a tomar decisiones informadas según tus intereses y necesidades.
+            </p>
+          </article>
+          <article class="path-card reveal">
+            <div class="path-icon">↗</div>
+            <h3>Desarrollo emprendedor</h3>
+            <p>Explora cómo funciona el modelo de negocio, las actividades que implica y las habilidades que puedes
+              desarrollar.</p>
+          </article>
+          <article class="path-card reveal">
+            <div class="path-icon">♡</div>
+            <h3>Comunidad y liderazgo</h3>
+            <p>Conecta con personas que valoran el aprendizaje, el crecimiento personal y el acompañamiento entre pares.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-art reveal">
+          <div class="about-photo"><img
+              src="images/about.jpeg"
+              alt="Retrato profesional de una mujer en un entorno luminoso" loading="lazy"></div>
+          <div class="about-note"><strong>Con intención.</strong><span>Una conversación real antes de tomar una
+              decisión.</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <div class="eyebrow">Hola, soy Angie</div>
+          <h2>Creo en el poder de aprender y crecer acompañadas.</h2>
+          <p>Mi camino combina bienestar, liderazgo y emprendimiento. Me interesa conectar con mujeres que quieren
+            explorar nuevas posibilidades con información clara, expectativas realistas y una comunidad de apoyo.</p>
+          <p>Mi objetivo es escucharte primero y ayudarte a evaluar si esta oportunidad encaja con tus prioridades
+            actuales.</p>
+          <div class="checklist">
+            <div class="check"><b>✓</b><span>Información clara sobre el modelo y los próximos pasos.</span></div>
+            <div class="check"><b>✓</b><span>Espacio para resolver tus preguntas sin presión.</span></div>
+            <div class="check"><b>✓</b><span>Una conversación adaptada a tus objetivos y disponibilidad.</span></div>
+          </div>
+          <a class="btn" href="#formulario">Conversemos sobre tus objetivos <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Un proceso sencillo</div>
+          <h2>Primero nos conocemos.<br>Después decides.</h2>
+          <p>Sin promesas extraordinarias ni decisiones apresuradas. Solo pasos claros para descubrir si tiene sentido
+            para ti.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <h3>Cuéntame de ti</h3>
+            <p>Comparte tus intereses, tus metas y lo que te gustaría explorar.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">02</div>
+            <h3>Revisamos opciones</h3>
+            <p>Hablamos con transparencia sobre el modelo, el tiempo y las responsabilidades.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">03</div>
+            <h3>Resolvemos dudas</h3>
+            <p>Revisamos tus preguntas para que puedas valorar la información con calma.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">04</div>
+            <h3>Tú eliges</h3>
+            <p>Decides si quieres avanzar, pedir más información o dejarlo para otro momento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container">
+        <div class="quote-inner reveal">
+          <div class="eyebrow">Sin presión · Con claridad</div>
+          <h2>“La mejor oportunidad es la que puedes evaluar con información y elegir con confianza.”</h2>
+          <p>Empezar con una conversación no te compromete a nada. Tu tiempo, tus prioridades y tu decisión importan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="formulario">
+      <div class="container form-layout">
+        <div class="form-intro reveal">
+          <div class="eyebrow">Conectemos</div>
+          <h2>Cuéntame qué te gustaría construir.</h2>
+          <p>Responde unas preguntas breves para que nuestra conversación sea más útil para ti. No hay respuestas
+            correctas o incorrectas.</p>
+          <div class="form-benefits">
+            <div class="form-benefit"><span>✦</span><span><b>Personalizado:</b> hablaremos de lo que realmente te
+                interesa.</span></div>
+            <div class="form-benefit"><span>✦</span><span><b>Transparente:</b> podrás preguntar por los detalles antes
+                de decidir.</span></div>
+            <div class="form-benefit"><span>✦</span><span><b>Sin compromiso:</b> enviar el formulario no significa
+                inscribirte.</span></div>
+          </div>
+        </div>
+        <div class="lead-form reveal">
+          <div class="form-progress" aria-label="Progreso del formulario"><span
+              class="active"></span><span></span><span></span></div>
+          <form id="leadForm">
+            <div class="form-step active" data-step="0">
+              <h3>01. Empecemos por conocerte</h3>
+              <p>¿Cómo puedo llamarte y dónde puedo responderte?</p>
+              <div class="field-grid">
+                <div class="field"><label for="nombre">Nombre *</label><input id="nombre" name="nombre"
+                    autocomplete="given-name" required placeholder="Tu nombre"></div>
+                <div class="field"><label for="apellido">Apellido</label><input id="apellido" name="apellido"
+                    autocomplete="family-name" placeholder="Tu apellido"></div>
+                <div class="field"><label for="email">Correo electrónico *</label><input id="email" name="email"
+                    type="email" autocomplete="email" required placeholder="tu@correo.com"></div>
+                <div class="field"><label for="pais">País o ciudad *</label><input id="pais" name="pais" required
+                    autocomplete="country-name" placeholder="¿Dónde estás?"></div>
+                <div class="field full"><label for="contacto">¿Cómo prefieres que te contacte? *</label><select
+                    id="contacto" name="contacto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>WhatsApp</option>
+                    <option>Correo electrónico</option>
+                    <option>Instagram</option>
+                  </select></div>
+                <div class="field full" id="whatsappField" hidden><label for="whatsapp">Número de WhatsApp con código de
+                    país</label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel"
+                    placeholder="+34 600 000 000"></div>
+                <div class="field full" id="instagramField" hidden><label for="instagram">Usuario de
+                    Instagram</label><input id="instagram" name="instagram" placeholder="@tuusuario"></div>
+              </div>
+              <div class="form-error" role="alert"></div>
+              <div class="form-actions"><span></span><button class="btn" type="button" data-next>Continuar
+                  <span>→</span></button></div>
+            </div>
+            <div class="form-step" data-step="1">
+              <h3>02. ¿Qué te interesa explorar?</h3>
+              <p>Elige lo que más se acerque a tus objetivos actuales.</p>
+              <div class="field"><label>¿Qué te gustaría conocer? *</label>
+                <div class="options">
+                  <div class="option"><input type="radio" id="int1" name="interes" value="Emprendimiento"
+                      required><label for="int1">Emprendimiento</label></div>
+                  <div class="option"><input type="radio" id="int2" name="interes" value="Productos de bienestar"><label
+                      for="int2">Productos de bienestar</label></div>
+                  <div class="option"><input type="radio" id="int3" name="interes" value="Liderazgo y comunidad"><label
+                      for="int3">Liderazgo y comunidad</label></div>
+                  <div class="option"><input type="radio" id="int4" name="interes" value="Quiero conocer todo"><label
+                      for="int4">Quiero conocer todo</label></div>
+                </div>
+              </div>
+              <div class="field"><label>¿En qué etapa estás? *</label>
+                <div class="options">
+                  <div class="option"><input type="radio" id="et1" name="etapa" value="Solo estoy explorando"
+                      required><label for="et1">Solo estoy explorando</label></div>
+                  <div class="option"><input type="radio" id="et2" name="etapa" value="Quiero empezar pronto"><label
+                      for="et2">Quiero empezar pronto</label></div>
+                  <div class="option"><input type="radio" id="et3" name="etapa" value="Ya tengo un negocio"><label
+                      for="et3">Ya tengo un negocio</label></div>
+                  <div class="option"><input type="radio" id="et4" name="etapa" value="Busco productos"><label
+                      for="et4">Busco productos</label></div>
+                </div>
+              </div>
+              <div class="form-error" role="alert"></div>
+              <div class="form-actions"><button class="btn btn-light" type="button" data-prev>← Atrás</button><button
+                  class="btn" type="button" data-next>Continuar <span>→</span></button></div>
+            </div>
+            <div class="form-step" data-step="2">
+              <h3>03. El siguiente paso</h3>
+              <p>Un poco más de contexto me ayudará a preparar una conversación relevante.</p>
+              <div class="field"><label for="tiempo">¿Cuánto tiempo podrías dedicarle? *</label><select id="tiempo"
+                  name="tiempo" required>
+                  <option value="">Selecciona una opción</option>
+                  <option>1–3 horas por semana</option>
+                  <option>4–6 horas por semana</option>
+                  <option>7 horas o más por semana</option>
+                  <option>Aún no lo sé</option>
+                </select></div>
+              <div class="field"><label for="objetivo">¿Qué te gustaría lograr o resolver? *</label><textarea
+                  id="objetivo" name="objetivo" required
+                  placeholder="Cuéntame brevemente qué estás buscando..."></textarea></div>
+              <div class="field"><label for="momento">¿Cuándo te vendría bien conversar? *</label><select id="momento"
+                  name="momento" required>
+                  <option value="">Selecciona una opción</option>
+                  <option>En los próximos días</option>
+                  <option>La próxima semana</option>
+                  <option>Solo quiero recibir información por ahora</option>
+                </select></div>
+              <div class="field"><label class="check" style="align-items:flex-start"><input type="checkbox"
+                    name="consentimiento" required style="width:auto;margin-top:4px"><span>Autorizo a Angie a
+                    contactarme sobre esta consulta. Entiendo que enviar este formulario no garantiza resultados ni me
+                    obliga a participar. *</span></label></div>
+              <div class="form-error" role="alert"></div>
+              <div class="form-actions"><button class="btn btn-light" type="button" data-prev>← Atrás</button><button
+                  class="btn" type="submit">Enviar mi solicitud <span>↗</span></button></div>
+              <p class="privacy">Tu información se utilizará únicamente para responder a esta consulta. Añade aquí tu
+                política de privacidad antes de publicar el sitio.</p>
+            </div>
+          </form>
+          <div class="success" id="successMessage" role="status">
+            <div class="success-icon">✓</div>
+            <h3>¡Gracias por compartirlo!</h3>
+            <p>Tu formulario está listo. Para recibir las respuestas, el propietario del sitio debe conectar un servicio
+              de formularios o CRM antes de publicarlo.</p><button type="button" class="btn" id="downloadLead">Descargar
+              respuesta de prueba</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <div class="container faq-grid">
+        <div class="section-head reveal">
+          <div class="eyebrow">Preguntas frecuentes</div>
+          <h2>Lo importante, explicado con claridad.</h2>
+          <p>Una decisión informada empieza por poder hacer preguntas.</p>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Enviar el formulario me
+                compromete a algo?</span><span>+</span></button>
+            <div class="faq-answer">No. Es solo una forma de compartir tus intereses y solicitar información. Puedes
+              decidir libremente si quieres continuar.</div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Necesito experiencia previa en
+                ventas?</span><span>+</span></button>
+            <div class="faq-answer">No tienes que asumir que ya conoces el modelo. En una conversación podemos revisar
+              las actividades, habilidades, costes y responsabilidades para valorar si encaja contigo.</div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Se garantizan ingresos o
+                resultados?</span><span>+</span></button>
+            <div class="faq-answer">No. Los resultados no están garantizados y pueden variar según múltiples factores.
+              Antes de tomar una decisión, solicita información oficial sobre costes, condiciones y divulgación de
+              ingresos aplicable a tu país.</div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Esta página pertenece
+                oficialmente a dōTERRA?</span><span>+</span></button>
+            <div class="faq-answer">Esta es una página personal de información y contacto. No debe presentarse como un
+              sitio oficial de dōTERRA ni implica respaldo oficial de la marca. Confirma siempre los detalles del
+              programa en los canales oficiales.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-card reveal">
+          <div>
+            <div class="eyebrow" style="color:#e7d4a1">Tu próximo paso</div>
+            <h2>Las buenas decisiones empiezan con buenas preguntas.</h2>
+            <p>Cuéntame qué buscas y exploremos si esta oportunidad tiene sentido para ti.</p>
+          </div><a class="btn" href="#formulario">Iniciar conversación <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div><a class="brand" href="#inicio"><span class="brand-mark">A</span><span>ANGIE RAMÍREZ<small>Expansión ·
+              Liderazgo · Bienestar</small></span></a>
+        <p>© <span id="year"></span> Angie Ramírez. Página personal de información y contacto.</p>
+      </div>
+      <div class="footer-links"><a href="#formulario">Contacto</a><a href="#preguntas">Preguntas frecuentes</a><a
+          href="#" id="privacyLink">Privacidad</a></div>
+    </div>
+    <div class="container">
+      <p style="font-size:10px;line-height:1.7;margin-top:22px;color:#a999b5">Aviso: Esta página es una propuesta
+        conceptual independiente. dōTERRA es una marca de su respectivo titular; esta página no es un sitio oficial. No
+        se prometen ingresos ni resultados. Personaliza el aviso legal, privacidad, datos de contacto y enlaces
+        oficiales antes de publicarla.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('leadForm');
+    const steps = [...document.querySelectorAll('.form-step')];
+    const progress = [...document.querySelectorAll('.form-progress span')];
+    let currentStep = 0;
+    let leadData = null;
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function showStep(index) {
+      currentStep = index;
+      steps.forEach((step, i) => step.classList.toggle('active', i === index));
+      progress.forEach((bar, i) => bar.classList.toggle('active', i <= index));
+      document.querySelector('.lead-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    function validateStep(index) {
+      const active = steps[index];
+      const error = active.querySelector('.form-error');
+      error.style.display = 'none'; error.textContent = '';
+      const required = [...active.querySelectorAll('[required]')];
+      for (const field of required) {
+        if (field.type === 'radio') {
+          const group = active.querySelectorAll(`[name="${field.name}"]`);
+          if (![...group].some(item => item.checked)) {
+            error.textContent = 'Por favor, selecciona una opción para continuar.'; error.style.display = 'block'; return false;
+          }
+        } else if (field.type === 'checkbox' && !field.checked) {
+          error.textContent = 'Necesitamos tu autorización para responder a esta consulta.'; error.style.display = 'block'; return false;
+        } else if (field.type !== 'radio' && field.type !== 'checkbox' && !field.checkValidity()) {
+          field.reportValidity(); return false;
+        }
+      }
+      return true;
+    }
+    document.querySelectorAll('[data-next]').forEach(btn => btn.addEventListener('click', () => { if (validateStep(currentStep)) showStep(Math.min(currentStep + 1, steps.length - 1)) }));
+    document.querySelectorAll('[data-prev]').forEach(btn => btn.addEventListener('click', () => showStep(Math.max(currentStep - 1, 0))));
+    document.getElementById('contacto').addEventListener('change', e => {
+      document.getElementById('whatsappField').hidden = e.target.value !== 'WhatsApp';
+      document.getElementById('instagramField').hidden = e.target.value !== 'Instagram';
+      document.getElementById('whatsapp').required = e.target.value === 'WhatsApp';
+      document.getElementById('instagram').required = e.target.value === 'Instagram';
+    });
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      if (!validateStep(currentStep)) return;
+      const data = new FormData(form);
+      leadData = Object.fromEntries(data.entries());
+      // Demo mode: no data is sent to a server. Connect a real form backend before publishing.
+      form.style.display = 'none';
+      document.querySelector('.form-progress').style.display = 'none';
+      document.getElementById('successMessage').style.display = 'block';
+    });
+    document.getElementById('downloadLead').addEventListener('click', () => {
+      if (!leadData) return;
+      const safe = Object.entries(leadData).map(([k, v]) => `${k}: ${v}`).join('\n');
+      const blob = new Blob([safe], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'solicitud-demo-angie.txt'; a.click(); URL.revokeObjectURL(url);
+    });
+    document.querySelectorAll('.faq-question').forEach(btn => btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item'); const open = item.classList.toggle('open'); btn.setAttribute('aria-expanded', String(open));
+    }));
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target) } }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.getElementById('privacyLink').addEventListener('click', e => { e.preventDefault(); alert('Añade aquí la URL de la política de privacidad antes de publicar el sitio.') });
+  </script>
+</body>
+
+</html>
